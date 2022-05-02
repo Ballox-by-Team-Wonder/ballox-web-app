@@ -2,30 +2,31 @@ import { Grid } from '@mui/material'
 import './forms.styles.css'
 import selectedIcon from '../../assets/icons/selected.png'
 
-export function Input({ half }) {
+export function Input({ half, label, handleChange, ...props }) {
 
     return (
         <Grid item xs={half ? 9 : 18}>
-            <label className="form__label" htmlFor="poll option">Poll Option</label>
+            <label className="form__label" htmlFor="poll option">{label}</label>
             <input 
                 type="text" 
                 className="form__input" 
-                placeholder="Eg. Option 1"
+                onChange={handleChange}
+                { ...props }
             />
         </Grid>
     )
 }
 
 
-export function TextArea({ half }) {
+export function TextArea({ half, label, handleChange, ...props }) {
 
     return (
         <Grid item xs={half ? 9 : 18}>
-            <label htmlFor="poll option" className="form__label">Poll Option</label>
+            <label htmlFor="poll option" className="form__label">{label}</label>
             <textarea
-                type="text" 
                 className="form__input form__textarea" 
-                placeholder="Eg. Option 1"
+                onChange={handleChange}
+                { ...props }
             />
         </Grid>
     )
