@@ -1,14 +1,14 @@
 import './voteCard.styles.css';
 
 
-export function VoteCard({ resultPage }) {
+export function VoteCard({ removeEffect }) {
 
     return (
-        <div className={`voteCard ${resultPage ? 'voteCard__resultPage' : ''}`}>
+        <div className={`voteCard ${removeEffect ? 'voteCard__removeEffect' : ''}`}>
             <Highlighter />
-            { !resultPage && <VoteCount /> }
+            { !removeEffect && <VoteCount /> }
             <h1 className="voteCard__title">The title of the vote card</h1>
-            <p className="voteCard__time">Created 5 days age</p>
+            <p className="voteCard__time">Created 5 days ago</p>
         </div>
     )
 }

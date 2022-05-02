@@ -26,12 +26,12 @@
     font-size: 18px;
 }
 
-.voteCard__resultPage {
+.voteCard__removeEffect {
     background-color: transparent;
     box-shadow: none;
 }
 
-.voteCard__resultPage:hover {
+.voteCard__removeEffect:hover {
     translate: 0px;
     box-shadow: none;
     cursor: default;

@@ -1,5 +1,6 @@
 import { Grid } from '@mui/material'
 import './forms.styles.css'
+import selectedIcon from '../../assets/icons/selected.png'
 
 export function Input({ half }) {
 
@@ -27,5 +28,20 @@ export function TextArea({ half }) {
                 placeholder="Eg. Option 1"
             />
         </Grid>
+    )
+}
+
+
+export function RadioButton({ selected }) {
+
+    return (
+        <div className={`radioButton ${selected ? 'radioButton__selected' : ''}`}>
+            { selected 
+                ? <img src={selectedIcon} alt="" className="radioButton__radio radioButton__radio-image" />
+                : <div className="radioButton__radio" />
+            }
+            
+            <div className="radioButton__text">Hello</div>
+        </div>
     )
 }
