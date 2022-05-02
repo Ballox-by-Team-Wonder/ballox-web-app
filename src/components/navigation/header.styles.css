@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 3px 16px rgba(226, 224, 224, 0.692);
 }
 
 .header__logo {

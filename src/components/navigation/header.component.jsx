@@ -1,9 +1,9 @@
 import React from 'react'
 import './header.styles.css'
 import balloxLogo from '../../assets/icons/balloxLogo.png'
-import Button from '../button/button.component'
+import { Button } from '../button/button.component'
 
-function Header() {
+export function Header() {
 
     return (
         <div className="header">
@@ -20,5 +20,3 @@ function Header() {
         </div>
     )
 }
-
-export default Header
