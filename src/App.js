@@ -3,6 +3,7 @@ import { Header } from './components/navigation/header.component'
 import { Routes, Route, Navigate } from "react-router-dom";
 import AvailableElections from'./pages/availableElections/availableElections.component'
 import CreateElection from './pages/createElection/createElection.component';
+import Results from './pages/results/results.component';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Navigate to="/available-elections" />} />
           <Route path="/available-elections" element={<AvailableElections />} />
           <Route path="/create-election" element={<CreateElection />} />
+          <Route path="/results" element={<Results />} />
           
         </Routes>
       </div>

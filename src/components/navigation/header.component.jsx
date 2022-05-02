@@ -15,7 +15,9 @@ export function Header() {
                 <Link to="/create-election">
                     <span className="header__center-link">Create Election</span>
                 </Link>
-                <span className="header__center-link">Results</span>
+                <Link to="/results">
+                    <span className="header__center-link">Results</span>
+                </Link>
             </div>
 
             <div className="header__right">

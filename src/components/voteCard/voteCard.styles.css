@@ -26,6 +26,17 @@
     font-size: 18px;
 }
 
+.voteCard__resultPage {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.voteCard__resultPage:hover {
+    translate: 0px;
+    box-shadow: none;
+    cursor: default;
+}
+
 
 
 
