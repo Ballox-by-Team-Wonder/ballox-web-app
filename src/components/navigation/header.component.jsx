@@ -2,9 +2,11 @@ import React from 'react'
 import './header.styles.css'
 import balloxLogo from '../../assets/icons/balloxLogo.png'
 import { Button } from '../button/button.component'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+import { Sidebar } from './sidebar.component'
 
 export function Header() {
+    const { pathname } = useLocation()
 
     return (
         <div className="header">
@@ -24,6 +26,7 @@ export function Header() {
                 <Button clear>Login</Button>
                 <Button>Sign up</Button>
             </div>
+            <Sidebar pathname={pathname} />
         </div>
     )
 }

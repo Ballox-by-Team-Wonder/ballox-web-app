@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 3px 16px rgba(226, 224, 224, 0.692);
+    z-index: 100;
 }
 
 .header__logo {
@@ -28,4 +29,14 @@
 
 .header__right {
     margin-right: 20px;
+}
+
+@media(max-width: 900px) {
+    .header__center {
+        display: none;
+    }
+
+    .header__right {
+        display: none;
+    }
 }

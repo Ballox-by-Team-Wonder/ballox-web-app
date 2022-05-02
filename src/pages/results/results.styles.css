@@ -1,9 +1,15 @@
 .results {
     width: 100%;
+    padding-bottom: 100px;
 }
 
 .results__container {
     width: 80%;
+    margin: 0 auto;
+}
+
+.results__inner-container {
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -45,6 +51,11 @@
 @media(max-width: 900px) {
     .results__right-section {
         padding-top: 50px;
+    }
+
+    .results__inner-container {
+        width: 100%;
+        margin: 0 auto;
     }
 }
 

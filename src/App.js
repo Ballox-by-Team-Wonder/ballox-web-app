@@ -4,7 +4,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import AvailableElections from'./pages/availableElections/availableElections.component'
 import CreateElection from './pages/createElection/createElection.component';
 import Results from './pages/results/results.component';
-import CastVote from './pages/castVote/castVote.component';
+import CastVote from './pages/vote/castVote.component';
 
 function App() {
 
