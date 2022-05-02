@@ -33,16 +33,19 @@ export function TextArea({ half, label, handleChange, ...props }) {
 }
 
 
-export function RadioButton({ selected }) {
+export function RadioButton({ selected, handleClick, name }) {
 
     return (
-        <div className={`radioButton ${selected ? 'radioButton__selected' : ''}`}>
+        <div 
+            onClick={handleClick} 
+            className={`radioButton ${selected ? 'radioButton__selected' : ''}`}
+        >
             { selected 
                 ? <img src={selectedIcon} alt="" className="radioButton__radio radioButton__radio-image" />
                 : <div className="radioButton__radio" />
             }
             
-            <div className="radioButton__text">Hello</div>
+            <div className="radioButton__text">{ name }</div>
         </div>
     )
 }

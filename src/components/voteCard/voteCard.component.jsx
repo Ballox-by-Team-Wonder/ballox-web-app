@@ -1,15 +1,24 @@
+import { Link } from 'react-router-dom';
 import './voteCard.styles.css';
 
 
-export function VoteCard({ removeEffect }) {
+export function VoteCard({ removeEffect, link }) {
 
-    return (
-        <div className={`voteCard ${removeEffect ? 'voteCard__removeEffect' : ''}`}>
-            <Highlighter />
-            { !removeEffect && <VoteCount /> }
-            <h1 className="voteCard__title">The title of the vote card</h1>
-            <p className="voteCard__time">Created 5 days ago</p>
-        </div>
+    const component = 
+    
+    <div className={`voteCard ${removeEffect ? 'voteCard__removeEffect' : ''}`}>
+        <Highlighter />
+        { !removeEffect && <VoteCount /> }
+        <h1 className="voteCard__title">The title of the vote card</h1>
+        <p className="voteCard__time">Created 5 days ago</p>
+    </div>
+
+    return !link ? (
+        component 
+    ) : (
+        <Link to={link}>
+            { component }
+        </Link>
     )
 }
 

@@ -1,3 +1,7 @@
+.createElection {
+    padding-bottom: 50px;
+}
+
 .createElection__content-title {
     margin: 30px auto 20px 0;
     color: rgb(70, 68, 68);

@@ -18,7 +18,7 @@ function AvailableElections() {
                 </Grid>
                                 
                 { Array(5).fill().map((_, i) => (
-                    <VoteCard key={i} />
+                    <VoteCard key={i} link="/results" />
                 ))}
 
             </Grid>
