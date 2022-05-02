@@ -39,11 +39,11 @@ function CastVote() {
                     ))}
 
                     <Grid item container xs={14} justifyContent="center">
-                        <Grid item xs={6}>
+                        <Grid item xs={12} sm={6}>
                             <Button className="castVote__button">Submit your vote</Button>
                         </Grid>
 
-                        <Grid item xs={6}>
+                        <Grid item xs={12} sm={6}>
                             <Link to="/results">
                                 <div className="castVote__jump-to-results">
                                     <span>Jump to results</span> <ChevronRightIcon />

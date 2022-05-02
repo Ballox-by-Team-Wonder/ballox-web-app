@@ -57,6 +57,18 @@ export function Sidebar({ pathname }) {
                             </ListItem>
                         </Link>
                     ))}
+                    <a href="https://ballox-by-team-wonder.github.io/Ballox-Web/" target="_blank">
+                        <ListItem
+                                button
+                                style={{
+                                    
+                                    borderBottom: '1px solid rgba(187, 182, 182, 0.445)',
+                                    // borderTop: i === 0 && '1px solid rgba(187, 182, 182, 0.445)'
+                                }}
+                            >
+                                <ListItemText><strong>Sign Out</strong></ListItemText>
+                            </ListItem>
+                        </a>
                     {/* </FadeIn> */}
                 </List>
             </div>

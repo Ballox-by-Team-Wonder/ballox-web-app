@@ -7,12 +7,12 @@ export const navData = [
         name: "Results",
         url: '/results'
     },
-    {
-        name: "Login",
-        url: '#'
-    },
-    {
-        name: "Sign up",
-        url: '#'
-    },
+    // {
+    //     name: "Login",
+    //     url: '#'
+    // },
+    // {
+    //     name: "Sign up",
+    //     url: '#'
+    // },
 ]

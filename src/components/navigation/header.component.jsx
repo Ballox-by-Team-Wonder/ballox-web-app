@@ -23,8 +23,11 @@ export function Header() {
             </div>
 
             <div className="header__right">
-                <Button clear>Login</Button>
-                <Button>Sign up</Button>
+                {/* <Button clear>Login</Button> */}
+                
+                <a href="https://ballox-by-team-wonder.github.io/Ballox-Web/" target="_blank">
+                    <Button>Sign out</Button>
+                </a>
             </div>
             <Sidebar pathname={pathname} />
         </div>
