@@ -1,0 +1,15 @@
+.availableElections__content {
+    padding-top: 100px;
+}
+
+.availableElections__content-title {
+    margin: 30px auto 20px 0;
+    color: rgb(70, 68, 68);
+    font-size: 40px;
+}
+
+.availableElections__content-time {
+    color: rgb(156, 154, 154);
+    font-size: 18px;
+    margin-bottom: 50px;
+}

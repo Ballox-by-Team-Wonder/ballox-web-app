@@ -1,0 +1,39 @@
+.form__label {
+    color: rgb(134, 133, 133);
+    font-weight: 500;
+}
+
+.form__input {
+    width: 100%;
+    box-sizing: border-box;
+    background: white;
+    color: black;
+    height: 60px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.06);
+    border: none;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    margin: 10px 0 35px 0;
+    transition: 200ms linear all;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+.form__input:focus {
+    outline: none;
+    border: 2px solid #408fe9;
+    box-shadow: 0 0 6px 4px #afcae78a;
+    transition: 200ms linear all;
+    color: #408fe9;
+}
+
+.form__input::placeholder {
+    color: gray;
+    font-weight: 500;
+}
+
+.form__textarea {
+    resize: none;
+    height: 120px;
+    padding: 20px;
+}

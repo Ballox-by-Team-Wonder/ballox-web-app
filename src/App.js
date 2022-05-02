@@ -1,23 +1,22 @@
 import './App.css';
 import { Header } from './components/navigation/header.component'
-import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom'
+import { Routes, Route, Navigate } from "react-router-dom";
 import AvailableElections from'./pages/availableElections/availableElections.component'
+import CreateElection from './pages/createElection/createElection.component';
 
 function App() {
 
   return (
-    <Router>
       <div className="App">
         <Header />
 
-        <Switch>
-          <Route exact path="/">
-            <Redirect to="/available-elections" />
-          </Route>
-          <Route exact path="/available-elections" component={AvailableElections} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Navigate to="/available-elections" />} />
+          <Route path="/available-elections" element={<AvailableElections />} />
+          <Route path="/create-election" element={<CreateElection />} />
+          
+        </Routes>
       </div>
-    </Router>
     
   );
 }
