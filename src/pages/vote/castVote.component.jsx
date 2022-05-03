@@ -7,7 +7,12 @@ import './castVote.styles.css'
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-const options = [ { name: 'Jay', value: '1' }, { name: 'Xepha', value: '2' } ]
+const options = [
+  { name: "Joe Biden", value: "1" },
+  { name: "Donald Trump", value: "2" },
+  { name: "Barack Obama", value: "3" },
+  { name: "George W. Bush", value: "4" },
+];
 
 function CastVote() {
     const [selection, setSelection] = useState("")
@@ -40,7 +45,7 @@ function CastVote() {
 
                     <Grid item container xs={14} justifyContent="center">
                         <Grid item xs={12} sm={6}>
-                            <Button className="castVote__button">Submit your vote</Button>
+                            <Button className="castVote__button">Cast your vote</Button>
                         </Grid>
 
                         <Grid item xs={12} sm={6}>

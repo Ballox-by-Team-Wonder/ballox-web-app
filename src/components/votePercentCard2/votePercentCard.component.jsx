@@ -2,20 +2,20 @@ import { Grid } from '@mui/material'
 import { ProgressBar } from '../progressBar/progressBar.component'
 import './votePercentCard.styles.css'
 
-export function VotePercentCard() {
+export function VotePercentCard2() {
 
     return (
       <div className="votePercentCard">
         <Grid container>
           <Grid item xs={10}>
-            <h1 className="votePercentCard__title">Joe Biden</h1>
+            <h1 className="votePercentCard__title">Donald Trump</h1>
           </Grid>
           <Grid item xs={2}>
-            <h1 className="votePercentCard__title votePercentCard__percent">50%</h1>
+            <h1 className="votePercentCard__title votePercentCard__percent">5%</h1>
           </Grid>
-          <ProgressBar value={50} />
+          <ProgressBar value={5} />
         </Grid>
-        <p className="votePercentCard__votes">5,000 votes</p>
+        <p className="votePercentCard__votes">500 votes</p>
       </div>
     );
 }

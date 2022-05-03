@@ -12,12 +12,12 @@ function AvailableElections() {
                 <Grid item container justifyContent="space-between" alignItems="baseline">
                     <Grid item>
                         <h1 className="availableElections__content-title">Available Elections</h1>
-                        <p className="availableElections__content-time">Below are the public polls created by Fast Poll members.</p>
+                        <p className="availableElections__content-time">The below election is only available for verified citizens of the United States of America.</p>
                     </Grid>
                     {/* <Grid item style={{ marginBottom: '50px' }}>menu here</Grid> */}
                 </Grid>
                                 
-                { Array(4).fill().map((_, i) => (
+                { Array(1).fill().map((_, i) => (
                     <VoteCard key={i} link="/results" />
                 ))}
 

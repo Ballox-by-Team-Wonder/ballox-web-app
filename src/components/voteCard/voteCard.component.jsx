@@ -9,8 +9,8 @@ export function VoteCard({ removeEffect, link }) {
     <div className={`voteCard ${removeEffect ? 'voteCard__removeEffect' : ''}`}>
         <Highlighter />
         { !removeEffect && <VoteCount /> }
-        <h1 className="voteCard__title">The title of the vote card</h1>
-        <p className="voteCard__time">Created 5 days ago</p>
+        <h1 className="voteCard__title">Presidential Election of the United States of America</h1>
+        <p className="voteCard__time">Created 1 day ago</p>
     </div>
 
     return !link ? (
@@ -26,7 +26,7 @@ function Highlighter() {
     
     return (
         <span className="highlighter">
-            NEWS
+            Live Election
         </span>
     )
 }
@@ -34,6 +34,6 @@ function Highlighter() {
 function VoteCount() {
 
     return (
-        <span className="voteCount">0 Votes</span>
+        <span className="voteCount">10,000 Votes</span>
     )
 }
