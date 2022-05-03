@@ -34,11 +34,11 @@ function CreateElection() {
             <TextArea label="Add the title of your election" placeholder="add a good title for the election you are about to schedule" />
 
             {inputList.map((_, index) => (
-              <Input key={index} label="Add a candidate" placeholder={`add a name ${index + 1}`} value={inputList[index]} handleChange={(event) => handleInputListChange(event, index)} />
+              <Input key={index} label="Add candidate's name" placeholder={`add a name ${index + 1}`} value={inputList[index]} handleChange={(event) => handleInputListChange(event, index)} />
             ))}
 
             <Button className="createElection__button" handleClick={handleAddOption}>
-              Schedule your Election{" "}
+              Add a candidate{" "}
             </Button>
           </Grid>
 
