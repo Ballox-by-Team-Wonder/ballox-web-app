@@ -23,37 +23,29 @@ function CreateElection() {
     }
 
     return (
-        <div className="createElection">
-            <Grid container columns={18}>
-                <Grid item xs={2} md={4} />
+      <div className="createElection">
+        <Grid container columns={18}>
+          <Grid item xs={2} md={4} />
 
-                <Grid item xs={14} md={10} className="availableElections__content">
-                    <h1 className="createElection__content-title">Create a poll</h1>
-                    <p className="createElection__content-subtitle">Complete the fields below to complete your poll.</p>
-                    
-                    <TextArea 
-                        label="Poll question"
-                        placeholder="Eg. What is your favourite color?"
-                    />
+          <Grid item xs={14} md={10} className="availableElections__content">
+            <h1 className="createElection__content-title">Schedule an Election</h1>
+            <p className="createElection__content-subtitle">Complete the fields below to setup your Election</p>
 
-                    { inputList.map((_, index) => (
-                        <Input 
-                            key={index}
-                            label="Poll option"
-                            placeholder={`Eg. Option ${index + 1}`}
-                            value={inputList[index]}
-                            handleChange={(event) => handleInputListChange(event, index)}
-                        />
-                    ))}
+            <TextArea label="Add the title of your election" placeholder="add a good title for the election you are about to schedule" />
 
-                    <Button className="createElection__button" handleClick={handleAddOption}>Add another option</Button>
+            {inputList.map((_, index) => (
+              <Input key={index} label="Add a candidate" placeholder={`add a name ${index + 1}`} value={inputList[index]} handleChange={(event) => handleInputListChange(event, index)} />
+            ))}
 
-                </Grid>
+            <Button className="createElection__button" handleClick={handleAddOption}>
+              Schedule your Election{" "}
+            </Button>
+          </Grid>
 
-                <Grid item xs={2} md={4} />
-            </Grid>
-        </div>
-    )
+          <Grid item xs={2} md={4} />
+        </Grid>
+      </div>
+    );
 }
 
 export default CreateElection
