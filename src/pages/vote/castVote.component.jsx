@@ -8,10 +8,10 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 const options = [
-  { name: "Joe Biden", value: "1" },
-  { name: "Donald Trump", value: "2" },
-  { name: "Barack Obama", value: "3" },
-  { name: "George W. Bush", value: "4" },
+  { name: "Peter Obi", value: "1" },
+  { name: "Bola Ahmed Tinubu", value: "2" },
+  { name: "Yemi Osinbajo", value: "3" },
+  { name: "Atiku Abubakar", value: "4" },
 ];
 
 function CastVote() {

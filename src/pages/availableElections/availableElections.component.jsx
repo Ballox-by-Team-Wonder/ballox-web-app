@@ -12,7 +12,7 @@ function AvailableElections() {
                 <Grid item container justifyContent="space-between" alignItems="baseline">
                     <Grid item>
                         <h1 className="availableElections__content-title">Available Elections</h1>
-                        <p className="availableElections__content-time">The below election is only available for verified citizens of the United States of America.</p>
+                        <p className="availableElections__content-time">The below election is only available for verified citizens of Nigeria.</p>
                     </Grid>
                     {/* <Grid item style={{ marginBottom: '50px' }}>menu here</Grid> */}
                 </Grid>

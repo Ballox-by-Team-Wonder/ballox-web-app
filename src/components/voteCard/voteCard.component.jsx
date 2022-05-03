@@ -9,7 +9,7 @@ export function VoteCard({ removeEffect, link }) {
     <div className={`voteCard ${removeEffect ? 'voteCard__removeEffect' : ''}`}>
         <Highlighter />
         { !removeEffect && <VoteCount /> }
-        <h1 className="voteCard__title">Presidential Election of the United States of America</h1>
+        <h1 className="voteCard__title">2023 Presidential Election for the Republic of Nigeria</h1>
         <p className="voteCard__time">Created 1 day ago</p>
     </div>
 

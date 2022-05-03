@@ -19,9 +19,9 @@ function Results() {
                 <VoteCard removeEffect />
 
                 <VotePercentCard />
+                <VotePercentCard4 />
                 <VotePercentCard2 />
                 <VotePercentCard3 />
-                <VotePercentCard4 />
               </div>
             </Grid>
 
